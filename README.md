@@ -1,5 +1,23 @@
-# framer
-A demo project using FramerJS
+# Framer
+A demo project using the Framer Motion Library
+
+## View Project Link
+To see the deployed version visit: TBD
+
+## Getting Started
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+## Spin Up App Locally
+http://127.0.0.1:5173/
 
 # React + Vite
 
