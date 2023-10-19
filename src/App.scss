@@ -1,0 +1,33 @@
+/* root variables */
+:root {
+  --dark-main: #0b032d;
+  --light-main: #f5f3fb
+}
+
+/* css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-main);
+  color: var(--light-main);
+}
+
+a {
+  text-decoration: none;
+color: inherit
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  font-family: DM Sans, sans-serif;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
