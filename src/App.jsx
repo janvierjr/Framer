@@ -5,18 +5,18 @@ import Sidebar from './components/sidebar/Sidebar';
 const App = () => {
   return (
     <div>
-      <section>
-        <Sidebar/>
+      <section id='Home'>
+        <Sidebar />
         <Navbar />
         Hero
       </section>
-      <section>Parallax</section>
+      <section id='Services'>Parallax</section>
       <section>Services</section>
-      <section>Parallax</section>
+      <section id='Portfolio'>Parallax</section>
       <section>PortfolioDemo1</section>
       <section>PortfolioDemo2</section>
       <section>PortfolioDemo3</section>
-      <section>Contact</section>
+      <section id='Contact'>Contact</section>
     </div>
   );
 }

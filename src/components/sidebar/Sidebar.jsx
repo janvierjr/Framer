@@ -4,28 +4,29 @@ import ToggleButton from './toggleButton/ToggleButton';
 import Links from './links/Links';
 import { motion } from 'framer-motion';
 
+const variants = {
+  open: {
+    clipPath: 'circle(1400px at 50px 50px',
+    transition: {
+      delay: 0.2,
+      type: 'spring',
+      stiffness: 70,
+      damping: 30,
+    },
+  },
+  closed: {
+    clipPath: 'circle(30px at 50px 50px',
+    transition: {
+      delay: 0.2,
+      type: 'spring',
+      stiffness: 550,
+      damping: 60,
+    },
+  },
+};
+
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
-  const variants = {
-    open: {
-      clipPath: 'circle(1200px at 50px 50px',
-      transition: {
-        delay: 0.2,
-        type: 'spring',
-        stiffness: 70,
-        damping: 30,
-      },
-    },
-    closed: {
-      clipPath: 'circle(30px at 50px 50px',
-      transition: {
-        delay: 0.2,
-        type: 'spring',
-        stiffness: 350,
-        damping: 60,
-      },
-    },
-  };
 
   return (
     <motion.div
@@ -35,7 +36,7 @@ const Sidebar = () => {
       <motion.div
         className='sidebar-bg'
         variants={variants}>
-        <Links />
+        <Links open={open} />
       </motion.div>
       <ToggleButton setOpen={setOpen} />
     </motion.div>
