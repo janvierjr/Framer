@@ -1,22 +1,24 @@
 import './App.scss';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
+import Sidebar from './components/sidebar/Sidebar';
 
 const App = () => {
   return (
-      <div>
+    <div>
       <section>
+        <Sidebar/>
         <Navbar />
-          Hero
-        </section>
-        <section>Parallax</section>
-        <section>Services</section>
-        <section>Parallax</section>
-        <section>PortfolioDemo1</section>
-        <section>PortfolioDemo2</section>
-        <section>PortfolioDemo3</section>
-        <section>Contact</section>
-      </div>
-  )
+        Hero
+      </section>
+      <section>Parallax</section>
+      <section>Services</section>
+      <section>Parallax</section>
+      <section>PortfolioDemo1</section>
+      <section>PortfolioDemo2</section>
+      <section>PortfolioDemo3</section>
+      <section>Contact</section>
+    </div>
+  );
 }
 
 export default App
