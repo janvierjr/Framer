@@ -1,0 +1,5 @@
+.hero {
+  // max-width: var(--max-width);
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, var(--darker), var(--dark-main));
+}

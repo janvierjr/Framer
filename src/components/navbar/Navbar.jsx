@@ -1,16 +1,21 @@
 import './Navbar.scss';
 import { motion } from 'framer-motion';
+import Sidebar from '../sidebar/Sidebar';
 
 const Navbar = () => {
   return (
     <nav className='navbar'>
-      {/** Sidebar */}
       <div className='wrapper'>
-        <motion.span
-          initial={{ opacity: 0, scale: 0.5 }}
-          transition={{ delay: .2, duration: .6, ease: 'circOut' }}
-          animate={{ opacity: 1, scale: 1}}
-        >Framer</motion.span>
+        <div className='menu-logo-container'>
+          <Sidebar />
+          <motion.span
+            initial={{ opacity: 0, scale: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.6, ease: 'circOut' }}
+            animate={{ opacity: 1, scale: 1 }}
+          >
+            Framer
+          </motion.span>
+        </div>
         <div className='social'>
           <a href='#'>
             <svg

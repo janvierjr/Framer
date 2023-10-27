@@ -4,13 +4,21 @@
 
   .wrapper {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
-    max-width: 1366px;
+    max-width: var(--max-width);
     height: 100%;
     margin: auto;
     padding-inline: 2rem;
+
+    .menu-logo-container {
+      display: flex;
+      justify-content: space-between;
+      width: 8rem;
+    }
   }
+
 
   .icon {
     width: 1.25rem;
