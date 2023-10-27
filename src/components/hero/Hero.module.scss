@@ -1,5 +1,83 @@
 .hero {
-  // max-width: var(--max-width);
   height: calc(100vh - 100px);
-  background: linear-gradient(180deg, var(--darker), var(--dark-main));
+  background: linear-gradient(180deg, var(--darker), var(--purple));
+  position: relative;
+  overflow: hidden;
+
+  .wrapper {
+    display: flex;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    height: inherit;
+  }
 }
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 4em;
+  width: 50%;
+  gap: 1rem;
+  height: 100%;
+  z-index: 2;
+}
+
+  h2 {
+    font-size: medium;
+    color: var(--secondary);
+    letter-spacing: 4px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .buttonContainer {
+    button {
+      border: 1px solid var(--light-main);
+      color: var(--light-main);
+      background-color: transparent;
+      padding: 10px 24px;
+      border-radius: 5px;
+      margin-right: 15px;
+      cursor: pointer;
+  }
+}
+
+  .imageContainer {
+    height: inherit;
+    position: absolute;
+    right: 15%;
+    width: 50%;
+    object-fit: cover;
+    object-position: 75% 50%;
+  }
+
+  .sliderContainer {
+    position: absolute;
+    letter-spacing: -18px;
+    width: 50%;
+    font-weight: bold;
+    font-size: 40vh;
+    white-space: nowrap;
+    opacity: .05;
+    bottom: -14%;
+  }
+
+   @media screen and (max-width: 900px) {
+      .textContainer, .imageContainer {
+        width: 100%;
+      }
+
+      .imageContainer {
+        object-fit: cover;
+        right: 10%;
+      }
+
+      .buttonContainer {
+        button {
+          margin-bottom: 10px;
+        }
+      }
+  }

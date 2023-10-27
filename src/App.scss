@@ -2,7 +2,8 @@
 :root {
   --dark-main: #0b032d;
   --darker: #050113;
-  --purple: #1e0e61;
+  --purple:#1e0e61;
+  --secondary:  #f3bb91;
   --light-main: #f5f3fb;
   --max-width: 1366px;
 }
@@ -15,7 +16,7 @@
 }
 
 body {
-  background-color: var(--dark-main);
+  background-color: var(--darker);
   color: var(--light-main);
 }
 
