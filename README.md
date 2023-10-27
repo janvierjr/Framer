@@ -6,7 +6,7 @@ To see the deployed version visit: TBD
 
 ## Screenshots
 Hero Section
-![hero screenshot](./src/assets/hero-framer-screenshot.png)
+![hero screenshot](./src/assets/hero-framer-screenshot.jpg)
 
 ## Getting Started
 First, run the development server:
