@@ -3,17 +3,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
   color: var(--dark-main);
 
   .sidebar-bg {
     width: 400px;
     position: fixed;
-    background-color: white;;
+    background-color: rgba(255 255 255);
     top: 0;
     left: 0;
     bottom: 0;
   }
+
+  .sidebar-close {
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+
 
   .links-container{
     position: absolute;

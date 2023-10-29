@@ -26,7 +26,7 @@ const itemVariants = {
   },
   close: {
     y: 40,
-    opacity: 0,
+    opacity: 0, 
   },
 };
 
