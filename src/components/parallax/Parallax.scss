@@ -1,0 +1,38 @@
+
+.parallax-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+
+  h1 {
+    font-size: 4rem;
+    margin-top: 2.5em;
+    z-index: 1;
+    @media screen and (max-width: 900px) {
+      font-size: 2rem;
+    }
+  }
+
+}
+.muppets-group {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url('src/assets/sesame-group.webp');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: center;
+  z-index: 3;
+}
+.stars {
+  background-image: url('src/assets/jws-image.jpeg');
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: cover;
+  background-position-y: bottom;
+  background-position-x: center;
+  background-blend-mode:luminosity;
+}
