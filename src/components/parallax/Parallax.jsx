@@ -9,7 +9,7 @@ const Parallax = ({ type }) => {
     offset: ['start start', 'end start']
   });
 
-  const yBackground = useTransform(scrollYProgress, [0, 1], ['0%', '200%']);
+  const yBackground = useTransform(scrollYProgress, [0, 1], ['0%', '150%']);
   const yOpacity = useTransform(
     scrollYProgress,
     // Map scrollYProgress from these values:
@@ -30,7 +30,7 @@ const Parallax = ({ type }) => {
       }}
     >
       <motion.h1 style={{ y: yBackground, opacity: yOpacity }}>
-        {type === 'services' ? 'Services We provide' : 'See Our Work'}
+        {type === 'services' ? 'Services We Provide' : 'See Our Work'}
       </motion.h1>
       <motion.div className='stars'></motion.div>
       <motion.div className='muppets-group'></motion.div>
