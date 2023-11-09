@@ -1,5 +1,5 @@
 # Framer
-A demo project using the Framer Motion Library, Sass.
+A demo project using the Framer Motion Library, Sass, Spline.
 
 ## View Project Link
 To see the deployed version visit: TBD
